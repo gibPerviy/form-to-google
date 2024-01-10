@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="page" content="index" />
+		<title>Google Account</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Meta Pixel Code -->
+		<script>
+			!(function (f, b, e, v, n, t, s) {
+				if (f.fbq) return
+				n = f.fbq = function () {
+					n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+				}
+				if (!f._fbq) f._fbq = n
+				n.push = n
+				n.loaded = !0
+				n.version = '2.0'
+				n.queue = []
+				t = b.createElement(e)
+				t.async = !0
+				t.src = v
+				s = b.getElementsByTagName(e)[0]
+				s.parentNode.insertBefore(t, s)
+			})(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js')
+			fbq('init', '788686063017846')
+			fbq('track', 'PageView')
+		</script>
+		<noscript><img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=788686063017846&ev=PageView&noscript=1" /></noscript>
+		<!-- End Meta Pixel Code -->
+
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+			;(function (m, e, t, r, i, k, a) {
+				m[i] =
+					m[i] ||
+					function () {
+						;(m[i].a = m[i].a || []).push(arguments)
+					}
+				m[i].l = 1 * new Date()
+				for (var j = 0; j < document.scripts.length; j++) {
+					if (document.scripts[j].src === r) {
+						return
+					}
+				}
+				;(k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a)
+			})(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym')
+
+			ym(95881685, 'init', {
+				clickmap: true,
+				trackLinks: true,
+				accurateTrackBounce: true,
+				webvisor: true,
+			})
+		</script>
+		<noscript
+			><div><img src="https://mc.yandex.ru/watch/95881685" style="position: absolute; left: -9999px" alt="" /></div
+		></noscript>
+		<!-- /Yandex.Metrika counter -->
+	</head>
+	<body>
+		<div class="bg_icons"></div>
+		<section class="section">
+			<div class="langbar__wrapper">
+				<ul class="langbar__list">
+					<li class="langbar__item en active">En</li>
+					<li class="langbar__item hi">Hin</li>
+					<li class="langbar__item es">Es</li>
+				</ul>
+			</div>
+			<div class="container">
+				<h1 class="header" data-lang="header"></h1>
+				<p class="description" data-lang="description"></p>
+
+				<form class="form" name="submit-to-google-sheet">
+					<label class="label" for="name">
+						<input class="input" type="text" name="Name" id="name" data-lang="name" placeholder="" autocomplete="off" title="" />
+					</label>
+
+					<label class="label" for="account">
+						<input class="input" type="text" name="Google Play Link" id="account" data-lang="account" placeholder="" autocomplete="off" title="" />
+					</label>
+
+					<label class="label" for="emailTelegram">
+						<input class="input" type="text" name="Email \ Telegram" id="emailTelegram" data-lang="emailTelegram" placeholder="" autocomplete="off" title="" />
+					</label>
+
+					<label class="label" for="contact">
+						<input class="input" type="text" name="Other" id="contact" data-lang="contact" placeholder="" autocomplete="off" title="" />
+					</label>
+
+					<p class="success" data-lang="success"></p>
+					<p class="error" data-lang="error"></p>
+
+					<div class="button__wrapper">
+						<button class="button" type="submit" data-lang="button"></button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<script defer type="module" src="js/lang.js"></script>
+		<script defer src="js/form.js"></script>
+		<script defer></script>
+	</body>
+</html>
